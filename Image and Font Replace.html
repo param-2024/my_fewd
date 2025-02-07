@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Text & Image</title>
+    <link rel="styelsheet" href="styel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 id="title">Image Replace & Text Replace</h1>
+            <p id="description">This is a discription of Image. You can replace this image.</p>
+            <br>
+            <button onclick="replacecontent()">Replace Content</button>
+        </div>
+
+        <div class="image-section">
+            <img id="image" src="E:\Images\university\university1.jpg">
+            <br>
+            <button onclick="replaceimage()">Replace Image</button>
+        </div>
+    </div>
+    <script>
+        function replacecontent() {
+            document.getElementById("title").innerText=("New Image Title");
+            document.getElementById("description").innerText="This is New Image";
+        }
+
+        function replaceimage() {
+            document .getElementById("image").src="https://th.bing.com/th/id/OIP.yqMfRnUS9F7OUzGtv-xqzgHaE7?rs=1&pid=ImgDetMain";
+        }
+    </script>
+</body>
+</html>
